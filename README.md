@@ -19,4 +19,4 @@
 ```
 
 
-A front-end notes app built by [Jack Oddy]('https://github.com/JackOddy'), [Mali Michael]('https://github.com/MaliMichael'), [Michael Miller]('https://github.com/mjosephmiller') & [Tommy Williams]('https://github.com/twilliams1988')
+A front-end notes app built by [Jack Oddy](https://github.com/JackOddy), [Mali Michael](https://github.com/MaliMichael), [Michael Miller](https://github.com/mjosephmiller) & [Tommy Williams](https://github.com/twilliams1988)
