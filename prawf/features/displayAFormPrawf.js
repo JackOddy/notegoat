@@ -18,10 +18,10 @@ function it(title, callback) {
 describe('noteGoat', function () {
   describe('form', function () {
     it('displays the form', function (title) {
-      assert.isTrue(title, document.getElementById('addNote') !== null );
+      assert.isTrue(title, document.getElementById('noteContent') !== null );
     });
     it('displays the submit button', function (title) {
-      assert.isTrue(title, document.getElementById('submitNote') !== null )
+      assert.isTrue(title, document.getElementById('addNote') !== null )
     })
   });
 });
