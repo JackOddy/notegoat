@@ -1,0 +1,20 @@
+{
+  "name": "notegoat",
+  "version": "1.0.0",
+  "description": "a note making app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "note",
+    "notes",
+    "goats",
+    "goat"
+  ],
+  "author": "Jack, Mali, Tommy, Mike",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.9.0"
+  }
+}
