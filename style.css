@@ -1,0 +1,17 @@
+div#focusNote{
+    width: 50%;
+    position: absolute;
+    right: 0;
+    padding: 30px;
+}
+
+#notes {
+    position: absolute;
+    width: 50%;
+    left: 0;
+    padding: 30px;
+}
+jotter{
+      margin: auto;
+    display: table;
+}
