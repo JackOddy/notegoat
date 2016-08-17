@@ -18,19 +18,19 @@ function it(title, callback) {
 describe('noteGoat', function () {
   describe('form', function () {
     it('displays the form', function (title) {
-      assert.isTrue(title, document.getElementById('noteContent') !== null );
+      assert.isTrue(title, o('noteContent') !== null );
     });
     it('displays the submit button', function (title) {
-      assert.isTrue(title, document.getElementById('addNote') !== null );
+      assert.isTrue(title, o('addNote') !== null );
     });
     it('lists a note', function (title) {
-      document.getElementById('noteContent').value = 'this is a note';
-      document.getElementById('addNote').click();
-      assert.isTrue(title, document.getElementById('notes').textContent.indexOf('this is a note') !== -1 );
+      o('noteContent').value = 'this is a note';
+      o('addNote').click();
+      assert.isTrue(title, o('notes').textContent.indexOf('this is a note') !== -1 );
     });
     it('displays a note', function (title) {
-      document.getElementById('0').click();
-      window.setTimeout( function (){assert.isTrue(title, document.getElementById('focusNote').textContent.indexOf('this is a note') !== -1 )}, 500);
+      o('0').click();
+      window.setTimeout( function (){assert.isTrue(title, o('focusNote').textContent.indexOf('this is a note') !== -1 )}, 500);
     });
   });
 });
