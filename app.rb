@@ -7,13 +7,21 @@ require_relative './ruby_models/notes'
 
 class NoteGoat < Sinatra::Base
 
+  before do
+    content_type :json
+    headers['Access-Control-Allow-Origin'] = '*'
+    headers['Access-Control-Allow-Methods'] = 'POST, PUT, DELETE, GET, OPTIONS'
+    headers['Access-Control-Request-Method'] = '*'
+    headers['Access-Control-Allow-Headers'] = 'Origin, X-Requested-With, Content-Type, Accept, Authorization'
+  end
+
   get '/' do
     'Hello world!'
   end
 
   post '/notes' do
-    note = {:content => params[:content]}
-    Note.create(content: note.to_json)
+    note = params[:content]
+    Note.create(content: note)
   end
 
   get '/notes' do
