@@ -1,16 +1,19 @@
-var chalk = require('chalk');
+// var chalk = require('chalk');
 
-function assert() {
-}
+(function(exports) {
 
-assert.isTrue = function(testTitle, assertionToCheck) {
-  if (!assertionToCheck) {
-    console.log(chalk.red('        ' + '👎  ' + testTitle + ' ❌'));
-    return false;
-  } else {
-    console.log(chalk.green('        ' + '🍓  ' + testTitle + ' ✅'));
-    return true;
+  function assert() {
   }
-};
 
-module.exports = assert;
+  assert.isTrue = function(testTitle, assertionToCheck) {
+    if (!assertionToCheck) {
+      console.log(('        ' + '👎  ' + testTitle + ' ❌'));
+      return false;
+    } else {
+      console.log(('        ' + '🍓  ' + testTitle + ' ✅'));
+      return true;
+    }
+  };
+
+exports.assert = assert;
+})(this);
