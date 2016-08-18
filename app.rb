@@ -1,8 +1,8 @@
+ENV["RACK_ENV"] ||= "development"
+
 require 'sinatra'
 require 'sinatra/base'
-# require 'sinatra/json'
-
-# require_relative 'ruby_models/notes'
+require_relative './ruby_models/notes'
 
 
 class NoteGoat < Sinatra::Base
