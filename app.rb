@@ -20,18 +20,15 @@ class NoteGoat < Sinatra::Base
   end
 
   post '/notes' do
-    note = params[:content]
-    Note.create(content: note)
+    Note.create(content: params[:content])
   end
 
   get '/notes' do
-    @all_notes = Note.all
-    @all_notes.to_json
+    Note.all.to_json
   end
 
   get '/notes/:id' do
-    @note = Note.get(params[:id])
-    @note.to_json
+    Note.get(params[:id]).to_json
   end
 
   run! if app_file == $0
