@@ -1,34 +1,27 @@
 require './ruby_models/notes'
-require 'json'
 
 describe Note do
 
+  before(:each) do
+    Note.create(content: "this is our first note")
+  end
+
   it 'saves a note to the database' do
-    json_note = {:content => "this is our first note"}
-    Note.create(content: json_note.to_json)
     expect(Note.count).to eq(1)
   end
 
   it 'can retrieve a specific note by a given id' do
-    json_note = {:content => "this is our first note"}
-    Note.create(content: json_note.to_json)
-    note = Note.get(2)
-    expect(note.id).to eq(2)
+    note = Note.get(5)
+    expect(note.id).to eq(5)
   end
 
-  it 'can create a jsoned note in the database' do
-    json_note = {:content => "this is a note"}
-    Note.create(content: json_note.to_json)
-    json_note2 = {:content => "this is another note"}
-    Note.create(content: json_note2.to_json)
+  it 'can create multiple notes in the database' do
+      Note.create(content: "this is another note")
     expect(Note.count).to eq(2)
   end
 
-  it 'can retrieve all jsoned notes' do
-    json_note = {:content => "this is a note"}
-    Note.create(content: json_note.to_json)
-    json_note2 = {:content => "this is another note"}
-    Note.create(content: json_note2.to_json)
-    @all_notes = Note.all
+  it 'can retrieve all notes' do
+    Note.create(content: "this is another note")
+    expect(Note.all.to_s).to match('[<Note @id=8 @content=<not loaded>>, #<Note @id=9 @content=<not loaded>>]')
   end
 end
