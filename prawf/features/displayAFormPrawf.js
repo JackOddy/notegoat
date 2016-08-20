@@ -26,11 +26,11 @@ describe('noteGoat', function () {
     it('lists a note', function (title) {
       o('noteContent').value = 'this is a note';
       o('addNote').click();
-      assert.isTrue(title, o('notes').textContent.indexOf('this is a note') !== -1 );
+      window.setTimeout( function () {assert.isTrue(title, o('notes').textContent.indexOf('this is a note') !== -1);}, 500);
     });
     it('displays a note', function (title) {
-      o('0').click();
-      window.setTimeout( function (){assert.isTrue(title, o('focusNote').textContent.indexOf('this is a note') !== -1 )}, 500);
+      window.setTimeout( function() { o('1').click()} , 1000 );
+      window.setTimeout( function (){assert.isTrue(title, o('focusNote').textContent.indexOf('this is a note') !== -1 )}, 2000);
     });
   });
 });
