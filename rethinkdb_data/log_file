@@ -1,0 +1,57 @@
+2016-08-20T11:11:37.201248000 0.441147s notice: Recursively removing directory /Users/jackoddy/Coding/Projects/notegoat/rethinkdb_data/tmp
+2016-08-20T11:11:37.203582000 0.443485s notice: Initializing directory /Users/jackoddy/Coding/Projects/notegoat/rethinkdb_data
+2016-08-20T11:11:37.203683000 0.443581s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory '/Users/jackoddy/Coding/Projects/notegoat/rethinkdb_data' did not already exist or is empty.)
+2016-08-20T11:11:37.203711000 0.443608s notice: Running rethinkdb 2.3.4 (CLANG 7.3.0 (clang-703.0.31))...
+2016-08-20T11:11:37.209489000 0.449388s notice: Running on Darwin 15.5.0 x86_64
+2016-08-20T11:11:37.209536000 0.449434s notice: Loading data from directory /Users/jackoddy/Coding/Projects/notegoat/rethinkdb_data
+2016-08-20T11:11:37.327547000 0.567446s info: Automatically using cache size of 1567 MB
+2016-08-20T11:11:37.329239000 0.569137s notice: Listening for intracluster connections on port 29015
+2016-08-20T11:11:37.331004000 0.570901s notice: Listening for client driver connections on port 28015
+2016-08-20T11:11:37.331138000 0.571035s notice: Listening for administrative HTTP connections on port 8080
+2016-08-20T11:11:37.331141000 0.571038s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2016-08-20T11:11:37.331147000 0.571044s notice: Listening on driver addresses: 127.0.0.1, ::1
+2016-08-20T11:11:37.331148000 0.571046s notice: Listening on http addresses: 127.0.0.1, ::1
+2016-08-20T11:11:37.331153000 0.571050s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-08-20T11:11:37.331157000 0.571054s notice: Server ready, "Jacks_MacBook_home_p6g" 8ec0b273-3cf5-49e6-ade8-3b2f3ea1da95
+2016-08-20T11:12:11.829579000 35.069052s info: Table 607cfd10-f86e-4245-83b2-293a1ead9c7a: Starting a new Raft election for term 1.
+2016-08-20T11:12:11.829884000 35.069356s info: Table 607cfd10-f86e-4245-83b2-293a1ead9c7a: Added replica on this server.
+2016-08-20T11:12:11.841269000 35.080742s info: Table d717ddc5-c210-4da0-bcb2-460c767bfbf3: Starting a new Raft election for term 1.
+2016-08-20T11:12:11.841699000 35.081171s info: Table d717ddc5-c210-4da0-bcb2-460c767bfbf3: Added replica on this server.
+2016-08-20T11:12:11.870710000 35.110183s info: Table ca1ba1ee-7ec8-4a12-9ebc-ebec55ee6d31: Starting a new Raft election for term 1.
+2016-08-20T11:12:11.871114000 35.110586s info: Table ca1ba1ee-7ec8-4a12-9ebc-ebec55ee6d31: Added replica on this server.
+2016-08-20T11:12:11.891993000 35.131465s info: Table 607cfd10-f86e-4245-83b2-293a1ead9c7a: This server is Raft leader for term 1. Latest log index is 0.
+2016-08-20T11:12:11.903089000 35.142561s info: Table d717ddc5-c210-4da0-bcb2-460c767bfbf3: This server is Raft leader for term 1. Latest log index is 0.
+2016-08-20T11:12:11.903266000 35.142738s info: Table ca1ba1ee-7ec8-4a12-9ebc-ebec55ee6d31: This server is Raft leader for term 1. Latest log index is 0.
+2016-08-20T11:12:12.756485000 35.995932s info: Table d717ddc5-c210-4da0-bcb2-460c767bfbf3: Configuration is changing.
+2016-08-20T11:21:22.896556000 586.129343s notice: Removing file /Users/jackoddy/Coding/Projects/notegoat/rethinkdb_data/ca1ba1ee-7ec8-4a12-9ebc-ebec55ee6d31
+2016-08-20T11:21:22.896565000 586.129352s info: Table ca1ba1ee-7ec8-4a12-9ebc-ebec55ee6d31: Deleted the table.
+2016-08-20T11:21:28.238029000 591.470768s notice: Removing file /Users/jackoddy/Coding/Projects/notegoat/rethinkdb_data/d717ddc5-c210-4da0-bcb2-460c767bfbf3
+2016-08-20T11:21:28.238042000 591.470781s info: Table d717ddc5-c210-4da0-bcb2-460c767bfbf3: Deleted the table.
+2016-08-20T11:21:32.219881000 595.452572s notice: Removing file /Users/jackoddy/Coding/Projects/notegoat/rethinkdb_data/607cfd10-f86e-4245-83b2-293a1ead9c7a
+2016-08-20T11:21:32.219892000 595.452582s info: Table 607cfd10-f86e-4245-83b2-293a1ead9c7a: Deleted the table.
+2016-08-20T11:21:37.379967000 600.612585s info: Table 9302da8c-1cbd-403d-8a50-0cbfa8c233a1: Starting a new Raft election for term 1.
+2016-08-20T11:21:37.380255000 600.612873s info: Table 9302da8c-1cbd-403d-8a50-0cbfa8c233a1: Added replica on this server.
+2016-08-20T11:21:37.390022000 600.622639s info: Table 2cb5664c-ed71-48d0-bdfe-ccb2bdf0eaaf: Starting a new Raft election for term 1.
+2016-08-20T11:21:37.390233000 600.622851s info: Table 2cb5664c-ed71-48d0-bdfe-ccb2bdf0eaaf: Added replica on this server.
+2016-08-20T11:21:37.399327000 600.631945s info: Table bcd32873-131c-44fc-b71b-06a912947615: Starting a new Raft election for term 1.
+2016-08-20T11:21:37.399504000 600.632122s info: Table bcd32873-131c-44fc-b71b-06a912947615: Added replica on this server.
+2016-08-20T11:21:37.423421000 600.656039s info: Table 9302da8c-1cbd-403d-8a50-0cbfa8c233a1: This server is Raft leader for term 1. Latest log index is 0.
+2016-08-20T11:21:37.437698000 600.670317s info: Table 2cb5664c-ed71-48d0-bdfe-ccb2bdf0eaaf: This server is Raft leader for term 1. Latest log index is 0.
+2016-08-20T11:21:37.437850000 600.670467s info: Table bcd32873-131c-44fc-b71b-06a912947615: This server is Raft leader for term 1. Latest log index is 0.
+2016-08-20T11:21:37.920705000 601.153323s info: Table 2cb5664c-ed71-48d0-bdfe-ccb2bdf0eaaf: Configuration is changing.
+2016-08-20T11:26:52.135641000 915.364553s notice: Removing file /Users/jackoddy/Coding/Projects/notegoat/rethinkdb_data/2cb5664c-ed71-48d0-bdfe-ccb2bdf0eaaf
+2016-08-20T11:26:52.135654000 915.364565s info: Table 2cb5664c-ed71-48d0-bdfe-ccb2bdf0eaaf: Deleted the table.
+2016-08-20T11:26:56.985349000 920.214190s notice: Removing file /Users/jackoddy/Coding/Projects/notegoat/rethinkdb_data/bcd32873-131c-44fc-b71b-06a912947615
+2016-08-20T11:26:56.985360000 920.214201s info: Table bcd32873-131c-44fc-b71b-06a912947615: Deleted the table.
+2016-08-20T11:27:04.493228000 927.721998s info: Table 56c5b813-7411-45f2-be65-474a04aa04d7: Starting a new Raft election for term 1.
+2016-08-20T11:27:04.493631000 927.722401s info: Table 56c5b813-7411-45f2-be65-474a04aa04d7: Added replica on this server.
+2016-08-20T11:27:04.505166000 927.733936s info: Table c7886803-8671-4d9c-8926-18435f69bf20: Starting a new Raft election for term 1.
+2016-08-20T11:27:04.505712000 927.734483s info: Table c7886803-8671-4d9c-8926-18435f69bf20: Added replica on this server.
+2016-08-20T11:27:04.596412000 927.825182s info: Table 56c5b813-7411-45f2-be65-474a04aa04d7: This server is Raft leader for term 1. Latest log index is 0.
+2016-08-20T11:27:04.596535000 927.825305s info: Table c7886803-8671-4d9c-8926-18435f69bf20: This server is Raft leader for term 1. Latest log index is 0.
+2016-08-20T11:27:05.044973000 928.273720s info: Table c7886803-8671-4d9c-8926-18435f69bf20: Configuration is changing.
+2016-08-22T11:51:45.508577000 43112.988760s notice: Server got SIGINT from pid 239, uid 501; shutting down...
+2016-08-22T11:51:45.520286000 43113.000465s notice: Shutting down client connections...
+2016-08-22T11:51:45.524610000 43113.004789s notice: All client connections closed.
+2016-08-22T11:51:45.524627000 43113.004806s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2016-08-22T11:51:45.576090000 43113.056270s notice: Storage engine shut down.
